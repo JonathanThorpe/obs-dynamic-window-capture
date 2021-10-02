@@ -23,7 +23,7 @@ pip install -r requirements.txt
 4. Specify an executable (case insensitive) - e.g. "whatsapp.exe".
 5. Provide a regular expression for the window title - e.g. ".*video call".
 
-Whenever the scene is changed, a check is done to see if the selected source mtches the window that is configured.
+Whenever the scene is changed, a check is done to see if the selected source matches the window that is configured.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
