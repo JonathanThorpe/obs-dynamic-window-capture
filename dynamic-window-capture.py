@@ -97,8 +97,13 @@ def on_event(event):
                 obs.obs_data_release(cur_settings)
 
         obs.sceneitem_list_release(scene_items)
+        obs.obs_source_release(current_scene)
 
 
 def script_load(settings):
     print("Script loaded")
     obs.obs_frontend_add_event_callback(on_event)
+
+def script_unload():
+    print("Script unloaded")
+    obs.obs_frontend_remove_event_callback(on_event)
